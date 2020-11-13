@@ -27,4 +27,15 @@ public class CalculadoraTest {
         assertEquals(-12,calculadora.sumar(a,b));
 
     }
+    @Test
+    public void restarNumeroNegativo(){
+        //init
+        Calculadora calculadora = new Calculadora();
+        // define values
+        double a= -5;
+        double b=-7;
+        //evaluation
+        assertEquals(2,calculadora.sumar(a,b));
+
+    }
 }

@@ -4,7 +4,10 @@ public class EcuacionLineal extends Ecuacion{
     private double a;
     private double b;
 
-    @Override
+    public EcuacionLineal(double a, double b) {
+	}
+
+	@Override
     public double resolverEcuacion(double x){
         return a*x+b;
     }
