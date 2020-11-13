@@ -38,4 +38,22 @@ public class CalculadoraTest {
         assertEquals(2,calculadora.sumar(a,b));
 
     }
+
+    @Test
+    public void evaluacionEcuacionLineal(){
+         // define previus values 
+         double a= 5;
+         double b=7;
+         Ecuacion ecuacion = new EcuacionLineal(a,b);
+
+         //init
+         Calculadora calculadora = new Calculadora();
+         //define value
+         double x=1;
+         calculadora.setEcuacion(ecuacion);
+         //evaluation
+         assertEquals(12d, calculadora.getEcuacion().resolverEcuacion(x));
+        
+
+    }
 }
